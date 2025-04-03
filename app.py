@@ -44,7 +44,7 @@ def login():
     if request.method == 'POST':
         usuario = request.form['usuario']
         senha = request.form['senha']
-        if usuario == "SENALBA RIO CAPITAL" and senha == "0000":
+        if usuario == "Usuario" and senha == "0000":
             session["logged_in"] = True
             return redirect(url_for("inscritos"))
         else:
