@@ -60,7 +60,7 @@ def logout():
 fuso_horario = pytz.timezone('America/Sao_Paulo')
 
 # Data e hora limite com fuso correto
-DATA_FINAL = fuso_horario.localize(datetime(2025, 4, 17, 17, 59))
+DATA_FINAL = fuso_horario.localize(datetime(2025, 4, 17, 17, 59)) # Ajuste considerante ano, mes, dia, hora, min
 
 @app.route('/')
 def index():
